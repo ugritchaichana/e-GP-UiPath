@@ -1,0 +1,553 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1116,7049" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Vision.Core.OCR</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="784,4660" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Electronic Government Procurement" sap:VirtualizedContainerService.HintSize="722,4572" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="688,4444" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="captchaRead" />
+              <Variable x:TypeArguments="x:String" Name="captchaWrite" />
+              <Variable x:TypeArguments="x:String" Default="DDRqSMd6f7rVzCiRvGRw0xFIeEk+6QafnBJfyZmJP4IGK2+yuXd+nGt+9qEIsDMV4uSVvmRQ7I7oPIjKkvtzHg==" Name="OCR_KEY" />
+              <Variable x:TypeArguments="x:Boolean" Default="True" Name="errorAlert" />
+              <Variable x:TypeArguments="x:Boolean" Default="False" Name="captchaStatus" />
+              <Variable x:TypeArguments="x:String" Name="strCount" />
+              <Variable x:TypeArguments="x:Int32" Name="countTotal" />
+              <Variable x:TypeArguments="x:Int32" Name="pageTotal" />
+              <Variable x:TypeArguments="x:Decimal" Name="pageTotalDecimal" />
+              <Variable x:TypeArguments="x:Decimal" Name="itemsPerPage">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:Decimal" Value="10" />
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ประกาศวันนี้'" sap:VirtualizedContainerService.HintSize="626,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://www.gprocurement.go.th/new_index.html" CVScreenId="66808342-55de-41f6-9521-9deb54ba79f2" CvElementArea="704, 748, 510, 44" CvTextArea="919, 756, 82, 21" CvTextArgument="U5:manui" CvType="Button" DesignTimeRectangle="707, 750, 505, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='           ประกาศวันนี้       ' parentid='layoutContainers' parentname='31ibmMainContainer' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           ประกาศวันนี้       ' parentid='layoutContainers' parentname='31ibmMainContainer' tag='A' type='' class='btn-cream ff' check:innerText='ประกาศวันนี้' /&gt;" Guid="4c6f587b-62c7-4f7b-a721-8de799269524" InformativeScreenshot="f5ad1e01698c3f1310ab0ce64cedfca1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Electronic Government Procurement' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NSelectItem DisplayName="Select Item '*ประเภทประกาศ'" sap:VirtualizedContainerService.HintSize="626,190" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="ประกาศเชิญชวน" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="17">
+                  <x:String>&lt;ตัวเลือกประเภทประกาศ&gt;</x:String>
+                  <x:String>ประกาศราคากลาง</x:String>
+                  <x:String>ประกาศร่าง TOR/ร่างเอกสารประกวดราคา</x:String>
+                  <x:String>ประกาศเชิญชวน</x:String>
+                  <x:String>ประกาศรายชื่อผู้ผ่านการตรวจสอบผู้ไม่มีผลประโยชน์ร่วมกัน</x:String>
+                  <x:String>ประกาศรายชื่อผู้ชนะการเสนอราคา</x:String>
+                  <x:String>เปลี่ยนแปลงประกาศเชิญชวน</x:String>
+                  <x:String>เปลี่ยนแปลงประกาศรายชื่อผู้ผ่านการตรวจสอบผู้ไม่มีผลประโยชน์ร่วมกัน</x:String>
+                  <x:String>เปลี่ยนแปลงประกาศรายชื่อผู้ชนะการเสนอราคา</x:String>
+                  <x:String>ยกเลิกประกาศเชิญชวน</x:String>
+                  <x:String>ยกเลิกประกาศรายชื่อผู้ผ่านการตรวจสอบผู้ไม่มีผลประโยชน์ร่วมกัน</x:String>
+                  <x:String>ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา</x:String>
+                  <x:String>ประกาศเชิญชวน เปลี่ยนแปลงประกาศเชิญชวน และยกเลิกประกาศเชิญชวน</x:String>
+                  <x:String>ประกาศรายชื่อผู้ไม่มีผลฯ เปลี่ยนแปลงประกาศรายชื่อผู้ไม่มีผลฯ และยกเลิกประกาศรายชื่อผู้ไม่มีผลฯ</x:String>
+                  <x:String>ประกาศรายชื่อผู้ชนะฯ เปลี่ยนแปลงประกาศรายชื่อผู้ชนะฯ และยกเลิกประกาศรายชื่อผู้ชนะฯ</x:String>
+                  <x:String>สรุปข้อมูลการเสนอราคาเบื้องต้น</x:String>
+                  <x:String>ประกาศผลผู้ชนะการจัดซื้อจัดจ้างหรือผู้ได้รับการคัดเลือกรายไตรมาส</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" CVScreenId="adf2d489-b732-4148-80b3-6549dd96df67" CvElementArea="738, 300, 589, 25" CvType="InputBox" DesignTimeRectangle="739, 302, 587, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='announceType' tableRow='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='announceType' type='' tag='SELECT' class='selCommon' aaname='' /&gt;" Guid="6228414f-85cd-460d-aefb-eef8245e2f54" InformativeScreenshot="d77553196b8edb488ff57b8ef32ff163.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="adf2d489-b732-4148-80b3-6549dd96df67" CvTextArea="623, 305, 99, 14" CvTextArgument="*eiruanilsma" CvType="Text" DesignTimeRectangle="510, 300, 218, 26" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='ประเภทประกาศ ' check:innerText='*ประเภทประกาศ' /&gt;" Guid="f8e2ae7c-f5c9-4e94-850f-8b26d9ce0c54" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'จังหวัด'" sap:VirtualizedContainerService.HintSize="626,190" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="กรุงเทพมหานคร" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>&lt;ตัวเลือกจังหวัด&gt;</x:String>
+                  <x:String>กระบี่</x:String>
+                  <x:String>กรุงเทพมหานคร</x:String>
+                  <x:String>กาญจนบุรี</x:String>
+                  <x:String>กาฬสินธุ์</x:String>
+                  <x:String>กำแพงเพชร</x:String>
+                  <x:String>ขอนแก่น</x:String>
+                  <x:String>จันทบุรี</x:String>
+                  <x:String>ฉะเชิงเทรา</x:String>
+                  <x:String>ชลบุรี</x:String>
+                  <x:String>ชัยนาท</x:String>
+                  <x:String>ชัยภูมิ</x:String>
+                  <x:String>ชุมพร</x:String>
+                  <x:String>เชียงราย</x:String>
+                  <x:String>เชียงใหม่</x:String>
+                  <x:String>ตรัง</x:String>
+                  <x:String>ตราด</x:String>
+                  <x:String>ตาก</x:String>
+                  <x:String>นครนายก</x:String>
+                  <x:String>นครปฐม</x:String>
+                  <x:String>นครพนม</x:String>
+                  <x:String>นครราชสีมา</x:String>
+                  <x:String>นครศรีธรรมราช</x:String>
+                  <x:String>นครสวรรค์</x:String>
+                  <x:String>นนทบุรี</x:String>
+                  <x:String>นราธิวาส</x:String>
+                  <x:String>น่าน</x:String>
+                  <x:String>บึงกาฬ</x:String>
+                  <x:String>บุรีรัมย์</x:String>
+                  <x:String>ปทุมธานี</x:String>
+                  <x:String>ประจวบคีรีขันธ์</x:String>
+                  <x:String>ปราจีนบุรี</x:String>
+                  <x:String>ปัตตานี</x:String>
+                  <x:String>พระนครศรีอยุธยา</x:String>
+                  <x:String>พะเยา</x:String>
+                  <x:String>พังงา</x:String>
+                  <x:String>พัทลุง</x:String>
+                  <x:String>พิจิตร</x:String>
+                  <x:String>พิษณุโลก</x:String>
+                  <x:String>เพชรบุรี</x:String>
+                  <x:String>เพชรบูรณ์</x:String>
+                  <x:String>แพร่</x:String>
+                  <x:String>ภูเก็ต</x:String>
+                  <x:String>มหาสารคาม</x:String>
+                  <x:String>มุกดาหาร</x:String>
+                  <x:String>แม่ฮ่องสอน</x:String>
+                  <x:String>ยโสธร</x:String>
+                  <x:String>ยะลา</x:String>
+                  <x:String>ร้อยเอ็ด</x:String>
+                  <x:String>ระนอง</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" CVScreenId="adf2d489-b732-4148-80b3-6549dd96df67" CvElementArea="738, 378, 133, 25" CvType="InputBox" DesignTimeRectangle="739, 380, 130, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='moiId' tableRow='8' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='moiId' type='' tag='SELECT' class='selCommon' aaname='' /&gt;" Guid="a5a62b90-0c99-4d6f-b4ef-b3b210090188" InformativeScreenshot="99ea7bb37188eea3b37fc5d8408d5b63.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="adf2d489-b732-4148-80b3-6549dd96df67" CvTextArea="681, 383, 40, 14" CvTextArgument="4owia" CvType="Text" DesignTimeRectangle="510, 378, 218, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='จังหวัด ' check:innerText='จังหวัด' /&gt;" Guid="1fcb261a-6771-4ab2-97a1-39eec852c052" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item '*วิธีการจัดหา'" sap:VirtualizedContainerService.HintSize="626,190" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="ประกวดราคาอิเล็กทรอนิกส์ (e-bidding)" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="26">
+                  <x:String>&lt;ตัวเลือกวิธีการจัดหา&gt;</x:String>
+                  <x:String>ตลาดอิเล็กทรอนิกส์ (e-market)</x:String>
+                  <x:String>ประกวดราคาอิเล็กทรอนิกส์ (e-bidding)</x:String>
+                  <x:String>คัดเลือก</x:String>
+                  <x:String>เฉพาะเจาะจง</x:String>
+                  <x:String>จ้างที่ปรึกษาโดยวิธีประกาศเชิญชวนทั่วไป</x:String>
+                  <x:String>จ้างที่ปรึกษาโดยวิธีคัดเลือก</x:String>
+                  <x:String>จ้างที่ปรึกษาโดยวิธีเฉพาะเจาะจง</x:String>
+                  <x:String>จ้างออกแบบหรือควบคุมงานก่อสร้างโดยวิธีประกาศเชิญชวนทั่วไป</x:String>
+                  <x:String>จ้างออกแบบหรือควบคุมงานก่อสร้างโดยวิธีคัดเลือก</x:String>
+                  <x:String>จ้างออกแบบหรือควบคุมงานก่อสร้างโดยวิธีเฉพาะเจาะจง</x:String>
+                  <x:String>จ้างออกแบบหรือควบคุมงานก่อสร้างโดยวิธีประกวดแบบ</x:String>
+                  <x:String>ประกวดราคานานาชาติ</x:String>
+                  <x:String>ตกลงราคา</x:String>
+                  <x:String>สอบราคา</x:String>
+                  <x:String>ประกวดราคา</x:String>
+                  <x:String>พิเศษ</x:String>
+                  <x:String>กรณีพิเศษ</x:String>
+                  <x:String>ประกวดราคาด้วยวิธีการทางอิเล็กทรอนิกส์โดยผ่านผู้ให้บริการตลาดกลาง</x:String>
+                  <x:String>จ้างที่ปรึกษาโดยวิธีตกลง</x:String>
+                  <x:String>จ้างที่ปรึกษาโดยวิธีคัดเลือก</x:String>
+                  <x:String>จ้างออกแบบโดยวิธีตกลง</x:String>
+                  <x:String>จ้างออกแบบโดยวิธีคัดเลือก</x:String>
+                  <x:String>จ้างออกแบบโดยวิธีคัดเลือกแบบจำกัดข้อกำหนด</x:String>
+                  <x:String>จ้างออกแบบโดยวิธีพิเศษ</x:String>
+                  <x:String>จ้างออกแบบโดยวิธีพิเศษประกวดแบบ</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" CVScreenId="adf2d489-b732-4148-80b3-6549dd96df67" CvElementArea="739, 405, 433, 25" CvType="InputBox" DesignTimeRectangle="739, 406, 431, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='methodId' tableRow='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='methodId' type='' tag='SELECT' class='selCommon' aaname='' /&gt;" Guid="3a0c7584-a7db-4b99-9fbb-f8c8b631c896" InformativeScreenshot="0604c8ac44d162e9912a675781936ab5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="adf2d489-b732-4148-80b3-6549dd96df67" CvTextArea="644, 408, 77, 15" CvTextArgument="*5Bmstown" CvType="Text" DesignTimeRectangle="510, 404, 218, 26" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='9' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='วิธีการจัดหา ' check:innerText='*วิธีการจัดหา' /&gt;" Guid="fb2dff58-fe93-43db-bce2-3d4227cdb26b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ค้นหา'" sap:VirtualizedContainerService.HintSize="626,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" CVScreenId="adf2d489-b732-4148-80b3-6549dd96df67" CvElementArea="808, 636, 102, 28" CvTextArea="841, 641, 35, 15" CvTextArgument="Funn" CvType="Button" DesignTimeRectangle="809, 638, 100, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='idBtn' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='idBtn' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='btnCommon' aaname='ค้นหา' check:text='ค้นหา' /&gt;" Guid="27d09d71-21f1-4340-af55-d8eca15fff96" InformativeScreenshot="71f20bbb99fb25acb12edc4a5b6aac25.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="626,2688" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,2541" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'INPUT CAPTCHA'" sap:VirtualizedContainerService.HintSize="530,227" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" DesignTimeRectangle="1266, 983, 207, 44" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='CAPTCHA' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='CAPTCHA' type='text' tag='INPUT' class='txtCommon' aaname='' /&gt;" Guid="cc033e4a-f443-4311-b718-0d744e8ab0e4" InformativeScreenshot="4a649e667d0a9589f268a6f6283732b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <ui:GetOCRText WordsInfo="{x:Null}" ContinueOnError="True" DisplayName="Get OCR Text 'IMG  captcha_image'" sap:VirtualizedContainerService.HintSize="530,204" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
+                    <ui:GetOCRText.OCREngine>
+                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                        <ActivityFunc.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                        </ActivityFunc.Argument>
+                        <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[OCR_KEY]" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_3" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Text="[captchaWrite]" Timeout="100000" />
+                      </ActivityFunc>
+                    </ui:GetOCRText.OCREngine>
+                    <ui:GetOCRText.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="071dc211-ebf2-40d6-9965-90298a9cf1d2" InformativeScreenshot="d5fca9b3045a2be1ac2d52fd41f6b6a3" Selector="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='captcha_image' tableRow='1' tag='IMG' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetOCRText.Target>
+                    <ui:GetOCRText.Text>
+                      <OutArgument x:TypeArguments="x:String">[captchaRead]</OutArgument>
+                    </ui:GetOCRText.Text>
+                  </ui:GetOCRText>
+                  <Assign sap:VirtualizedContainerService.HintSize="530,115" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[captchaWrite]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[captchaWrite.Replace(" ", "")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT CAPTCHA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Text="[captchaWrite]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" DesignTimeRectangle="1266, 1087, 207, 44" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='CAPTCHA' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='CAPTCHA' type='text' tag='INPUT' class='txtCommon' aaname='' /&gt;" Guid="eff62575-98ab-471d-802c-6153a9f467eb" InformativeScreenshot="a0beb32a09142daeedab7ddf37c627e6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ตรวจสอบข้อมูล'" sap:VirtualizedContainerService.HintSize="530,227" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" DesignTimeRectangle="1214, 1141, 200, 50" DesignTimeScaleFactor="2" ElementType="Button" FullSelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='confirm' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='confirm' type='button' tag='INPUT' class='btnCommon' aaname='ตรวจสอบข้อมูล' check:text='ตรวจสอบข้อมูล' /&gt;" Guid="95b2483d-eecc-4e2f-a21d-b3d6b2f0b9a9" InformativeScreenshot="fb12c6cc464094d8c3b379e878e3e1ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <ui:UiElementExists DisplayName="Element Exists 'push button  OK'" Exists="[errorAlert = True]" sap:VirtualizedContainerService.HintSize="530,139" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f9abf0c-58bc-4ac6-88bf-c45a22a4c236" InformativeScreenshot="246aa1c336f8bcbf86b1c949de6962f0" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='ค้นหาประกาศเชิญชวน - Google Chrome' /&gt;&lt;ctrl name='process.gprocurement.go.th says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <If Condition="[errorAlert = True]" sap:VirtualizedContainerService.HintSize="530,1253" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,782" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                          <uix:NKeyboardShortcuts.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NKeyboardShortcuts.VerifyOptions>
+                        </uix:NKeyboardShortcuts>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" sap:VirtualizedContainerService.HintSize="354,227" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" DesignTimeRectangle="1600, 877, 200, 50" DesignTimeScaleFactor="2" ElementType="Button" FullSelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='BtnRef' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='BtnRef' type='button' tag='INPUT' class='btnCommon' aaname='Refresh' check:text='Refresh' /&gt;" Guid="2879d3ba-6afb-404f-9c72-ece586452f14" InformativeScreenshot="713d2edf36b56ed857ae6e9f6cf5a1b3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT CAPTCHA'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" DesignTimeRectangle="1266, 983, 207, 44" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='CAPTCHA' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframePop' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='CAPTCHA' type='text' tag='INPUT' class='txtCommon' aaname='' /&gt;" Guid="6c0923e6-5d9a-48f4-aca1-77208a46cc4d" InformativeScreenshot="381afbaaa7d0d2eafb822668002bec57.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,309" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[captchaStatus]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[errorAlert]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="captchaStatus = False" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+            <uix:NGetText DisplayName="Get Text '31'" sap:VirtualizedContainerService.HintSize="626,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="bd768fd7-9f05-4427-ae30-23d2e150c5dc" TextString="[strCount]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch" DesignTimeRectangle="930, 1576, 35, 34" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl id='tableb3' tableRow='1' tag='TABLE' /&gt;&lt;webctrl idx='3' tableRow='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tableb3' tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='B' /&gt;" Guid="52ef042c-4a34-4284-8b15-d78603224f9f" ImageBase64="" InformativeScreenshot="c984a4a372042c062b4f8b01ff642906.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ค้นหาประกาศเชิญชวน' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="626,115" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[countTotal]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(strCount)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="626,115" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Decimal">[pageTotalDecimal]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Decimal">[Math.Ceiling(countTotal/itemsPerPage)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="626,115" sap2010:WorkflowViewState.IdRef="Assign_10">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[pageTotal]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(pageTotalDecimal)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="626,109" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[pageTotal]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f0b71256ace5de4791e241e174b0d606.jpg" Selector="&lt;html app='chrome.exe' title='Electronic Government Procurement' /&gt;" Title="Electronic Government Procurement" Url="http://www.gprocurement.go.th/new_index.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

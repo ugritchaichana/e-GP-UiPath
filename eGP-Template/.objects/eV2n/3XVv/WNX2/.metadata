@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ค้นหาประกาศเชิญชวน",
+  "Type": "Screen",
+  "Id": "WNX24VuECkeNEQP2C2eADA",
+  "Reference": "YR9fggfIjka6OUuFLdcHBQ/WNX24VuECkeNEQP2C2eADA",
+  "ParentRef": "YR9fggfIjka6OUuFLdcHBQ/3XVvlersL0upYGw5yVYU3A",
+  "Created": "2024-08-19T16:23:53.3663522Z",
+  "Updated": "2024-08-19T16:23:53.3663522Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

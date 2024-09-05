@@ -1,0 +1,12 @@
+﻿{
+  "Name": "ค้นหาประกาศเชิญชวน",
+  "Type": "App",
+  "Id": "eV2nppLTwkCFcdK2fAQuYw",
+  "Reference": "YR9fggfIjka6OUuFLdcHBQ/eV2nppLTwkCFcdK2fAQuYw",
+  "Created": "2024-08-19T16:23:53.3346793Z",
+  "Updated": "2024-08-19T16:23:53.3346793Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
